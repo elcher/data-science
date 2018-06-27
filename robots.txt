@@ -1,0 +1,4 @@
+Sitemap: https://elcher.github.io/data-science/sitemapindex.xml
+
+User-Agent: *
+Host: elcher.github.io
