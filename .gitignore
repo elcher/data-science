@@ -1,5 +1,5 @@
-bin/
-lib/
+bin/__pycache__
+lib/__pycache__
 cache/
 .doit.db
 __pycache__
@@ -7,8 +7,6 @@ __pycache__
 www/
 output/
 etc/
-lib64/
 share/
 include/
-pip-selfcheck.json
 nikola-themes/
