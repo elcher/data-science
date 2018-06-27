@@ -1,5 +1,5 @@
-bin/__pycache__
-lib/__pycache__
+bin/
+lib/
 cache/
 .doit.db
 __pycache__
