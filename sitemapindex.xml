@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
   <loc>https://elcher.github.io/data-science/en/galleries/rss.xml</loc>
-  <lastmod>2018-06-27T19:18:00Z</lastmod>
+  <lastmod>2018-06-27T19:56:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elcher.github.io/data-science/en/rss.xml</loc>
@@ -15,6 +15,6 @@
  </sitemap>
  <sitemap>
   <loc>https://elcher.github.io/data-science/sitemap.xml</loc>
-  <lastmod>2018-06-27T19:18:00Z</lastmod>
+  <lastmod>2018-06-27T19:56:00Z</lastmod>
  </sitemap>
 </sitemapindex>
