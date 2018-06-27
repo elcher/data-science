@@ -1,4 +1,11 @@
-cache
+bin/
+lib/
+cache/
 .doit.db
 __pycache__
-output
+*.pyc
+www/
+output/
+etc/
+lib64/
+share/
