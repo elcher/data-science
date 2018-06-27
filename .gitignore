@@ -16,3 +16,4 @@ nikolaserve.pid
 *.py[cod]
 themes
 pip-selfcheck.json
+plugins
