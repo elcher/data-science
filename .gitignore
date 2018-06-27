@@ -10,3 +10,5 @@ etc/
 lib64/
 share/
 include/
+pip-selfcheck.json
+nikola-themes/
