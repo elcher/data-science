@@ -24,8 +24,8 @@ SITE_URL = "https://elcher.github.io/data-science/"
 # This is the URL where Nikola's output will be deployed.
 # If not set, defaults to SITE_URL
 # BASE_URL = "https://elcher.github.io/data-science/"
-BLOG_EMAIL = "n.tesla@example.com"
-BLOG_DESCRIPTION = "This is a demo site for Nikola."  # (translatable)
+BLOG_EMAIL = "elcheur@gmail.com"
+BLOG_DESCRIPTION = "demo"  # (translatable)
 
 # Nikola is multilingual!
 #
@@ -150,6 +150,7 @@ NAVIGATION_LINKS = {
         ('https://github.com/elcher', 'My Github', 'fab fa-github'),
     )
 }
+
 # Alternative navigation links. Works the same way NAVIGATION_LINKS does,
 # although themes may not always support them. (translatable)
 # (Bootstrap 4: right-side of navbar, Bootblog 4: right side of title)
@@ -551,7 +552,7 @@ HIDDEN_AUTHORS = ['Guest']
 # Final location for the main blog page and sibling paginated pages is
 # output / TRANSLATION[lang] / INDEX_PATH / index-*.html
 # (translatable)
-# INDEX_PATH = ""
+INDEX_PATH = ""
 
 # Optional HTML that displayed on “main” blog index.html files.
 # May be used for a greeting. (translatable)
