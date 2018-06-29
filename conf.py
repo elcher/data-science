@@ -227,11 +227,11 @@ POSTS = (
 	("posts/*.ipynb", "posts", "post.tmpl"),
 )
 PAGES = (
-    ("pages/*.rst", "pages", "page.tmpl"),
-    ("pages/*.md", "pages", "page.tmpl"),
-    ("pages/*.txt", "pages", "page.tmpl"),
-    ("pages/*.html", "pages", "page.tmpl"),
-	("pages/*.ipynb", "pages", "page.tmpl"),
+    ("pages/*.rst", "pages", "post.tmpl"),
+    ("pages/*.md", "pages", "post.tmpl"),
+    ("pages/*.txt", "pages", "post.tmpl"),
+    ("pages/*.html", "pages", "post.tmpl"),
+	("pages/*.ipynb", "pages", "post.tmpl"),
 )
 
 
@@ -1079,7 +1079,7 @@ PRETTY_URLS = True
 # IPYNB_CONFIG = {}
 # With the following example configuration you can use a custom jinja template
 # called `toggle.tpl` which has to be located in your site/blog main folder:
-# IPYNB_CONFIG = {'Exporter':{'template_file': 'toggle'}}
+IPYNB_CONFIG = {'Exporter':{'template_file': 'toggle'}}
 
 # What Markdown extensions to enable?
 # You will also get gist, nikola and podcast because those are
