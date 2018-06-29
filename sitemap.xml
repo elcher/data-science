@@ -19,11 +19,15 @@
  </url>
  <url>
   <loc>https://elcher.github.io/data-science/categories/</loc>
-  <lastmod>2018-06-29T04:50:00Z</lastmod>
+  <lastmod>2018-06-29T05:36:00Z</lastmod>
  </url>
  <url>
   <loc>https://elcher.github.io/data-science/categories/cat_posts/</loc>
   <lastmod>2018-06-29T04:50:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://elcher.github.io/data-science/categories/cat_practice/</loc>
+  <lastmod>2018-06-29T05:36:00Z</lastmod>
  </url>
  <url>
   <loc>https://elcher.github.io/data-science/categories/pandas/</loc>
