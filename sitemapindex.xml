@@ -6,20 +6,16 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
-  <loc>https://elcher.github.io/data-science/categories/cat_posts.xml</loc>
-  <lastmod>2018-06-29T04:50:00Z</lastmod>
- </sitemap>
- <sitemap>
   <loc>https://elcher.github.io/data-science/categories/cat_practice.xml</loc>
-  <lastmod>2018-06-29T05:36:00Z</lastmod>
+  <lastmod>2018-06-29T06:11:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elcher.github.io/data-science/categories/pandas.xml</loc>
-  <lastmod>2018-06-29T05:36:00Z</lastmod>
+  <lastmod>2018-06-29T06:11:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elcher.github.io/data-science/categories/python.xml</loc>
-  <lastmod>2018-06-29T05:36:00Z</lastmod>
+  <lastmod>2018-06-29T06:11:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elcher.github.io/data-science/galleries/rss.xml</loc>
@@ -27,10 +23,10 @@
  </sitemap>
  <sitemap>
   <loc>https://elcher.github.io/data-science/rss.xml</loc>
-  <lastmod>2018-06-29T05:36:00Z</lastmod>
+  <lastmod>2018-06-29T06:11:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elcher.github.io/data-science/sitemap.xml</loc>
-  <lastmod>2018-06-29T05:36:00Z</lastmod>
+  <lastmod>2018-06-29T06:52:00Z</lastmod>
  </sitemap>
 </sitemapindex>
