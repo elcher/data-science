@@ -18,26 +18,6 @@
   <lastmod>2018-06-29T04:50:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>https://elcher.github.io/data-science/en/categories/cat_posts.xml</loc>
-  <lastmod>2018-06-29T04:19:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>https://elcher.github.io/data-science/en/categories/pandas.xml</loc>
-  <lastmod>2018-06-29T04:19:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>https://elcher.github.io/data-science/en/categories/python.xml</loc>
-  <lastmod>2018-06-29T04:19:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>https://elcher.github.io/data-science/en/galleries/rss.xml</loc>
-  <lastmod>2018-06-29T04:37:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>https://elcher.github.io/data-science/en/rss.xml</loc>
-  <lastmod>2018-06-29T04:37:00Z</lastmod>
- </sitemap>
- <sitemap>
   <loc>https://elcher.github.io/data-science/galleries/rss.xml</loc>
   <lastmod>2018-06-29T04:50:00Z</lastmod>
  </sitemap>
@@ -47,6 +27,6 @@
  </sitemap>
  <sitemap>
   <loc>https://elcher.github.io/data-science/sitemap.xml</loc>
-  <lastmod>2018-06-29T04:50:00Z</lastmod>
+  <lastmod>2018-06-29T04:54:00Z</lastmod>
  </sitemap>
 </sitemapindex>
