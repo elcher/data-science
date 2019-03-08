@@ -16,7 +16,7 @@ import time
 
 
 # Data about this site
-BLOG_AUTHOR = "Feline Dora"  # (translatable)
+BLOG_AUTHOR = "Dora Feline"  # (translatable)
 BLOG_TITLE = "Um Om"  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link. Don't forget the protocol (http/https)!
@@ -224,14 +224,14 @@ POSTS = (
     ("posts/*.md", "posts", "post.tmpl"),
     ("posts/*.txt", "posts", "post.tmpl"),
     ("posts/*.html", "posts", "post.tmpl"),
-	("posts/*.ipynb", "posts", "post.tmpl"),
+    ("posts/*.ipynb", "posts", "post.tmpl"),
 )
 PAGES = (
     ("pages/*.rst", "pages", "post.tmpl"),
     ("pages/*.md", "pages", "post.tmpl"),
     ("pages/*.txt", "pages", "post.tmpl"),
     ("pages/*.html", "pages", "post.tmpl"),
-	("pages/*.ipynb", "pages", "post.tmpl"),
+    ("pages/*.ipynb", "pages", "post.tmpl"),
 )
 
 
@@ -1190,7 +1190,7 @@ MARKDOWN_EXTENSIONS = ['markdown.extensions.fenced_code', 'markdown.extensions.c
 # <input type="text" name="q" class="form-control" placeholder="Search">
 # </div>
 # <button type="submit" class="btn btn-primary">
-# 	<span class="glyphicon glyphicon-search"></span>
+#   <span class="glyphicon glyphicon-search"></span>
 # </button>
 # <input type="hidden" name="sitesearch" value="%s">
 # </form>
@@ -1419,11 +1419,11 @@ LATEX_FORMULA_OUTPUT_FORMAT = 'png'
 # The default is {}, which means no preamble additions. The following example
 # shows how to define some macros for all formulae:
 LATEX_FORMULA_ADDITIONAL_PREAMBLE = {
-	"": r"""
+    "": r"""
 \usepackage{amssymb}
 \newcommand{\N}{\mathbb{N}}
 \newcommand{\Z}{\mathbb{Z}}
 \newcommand{\Q}{\mathbb{Q}}
 \newcommand{\R}{\mathbb{R}}
 \newcommand{\C}{\mathbb{C}}"""
-	}
+    }
