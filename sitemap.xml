@@ -7,11 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://elcher.github.io/data-science/</loc>
-  <lastmod>2019-03-01T20:06:00Z</lastmod>
- </url>
- <url>
-  <loc>https://elcher.github.io/data-science/2019/</loc>
-  <lastmod>2019-03-01T20:06:00Z</lastmod>
+  <lastmod>2019-03-08T20:42:00Z</lastmod>
  </url>
  <url>
   <loc>https://elcher.github.io/data-science/archive.html</loc>
@@ -19,34 +15,10 @@
  </url>
  <url>
   <loc>https://elcher.github.io/data-science/categories/</loc>
-  <lastmod>2019-03-01T20:06:00Z</lastmod>
- </url>
- <url>
-  <loc>https://elcher.github.io/data-science/categories/ipython/</loc>
-  <lastmod>2019-03-01T20:06:00Z</lastmod>
- </url>
- <url>
-  <loc>https://elcher.github.io/data-science/categories/nlp/</loc>
-  <lastmod>2019-03-01T20:06:00Z</lastmod>
- </url>
- <url>
-  <loc>https://elcher.github.io/data-science/categories/nltk/</loc>
-  <lastmod>2019-03-01T20:06:00Z</lastmod>
- </url>
- <url>
-  <loc>https://elcher.github.io/data-science/categories/pandas/</loc>
-  <lastmod>2019-03-01T20:06:00Z</lastmod>
- </url>
- <url>
-  <loc>https://elcher.github.io/data-science/categories/python/</loc>
-  <lastmod>2019-03-01T20:06:00Z</lastmod>
+  <lastmod>2019-03-08T20:39:00Z</lastmod>
  </url>
  <url>
   <loc>https://elcher.github.io/data-science/pages/</loc>
-  <lastmod>2019-03-01T20:06:00Z</lastmod>
- </url>
- <url>
-  <loc>https://elcher.github.io/data-science/posts/who-has-the-most-lines-in-frasier/</loc>
   <lastmod>2019-03-01T20:06:00Z</lastmod>
  </url>
 </urlset>
