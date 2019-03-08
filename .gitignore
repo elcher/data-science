@@ -17,3 +17,4 @@ nikolaserve.pid
 themes
 pip-selfcheck.json
 plugins
+.ipynb_checkpoints
