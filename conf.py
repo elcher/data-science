@@ -225,6 +225,7 @@ POSTS = (
     ("posts/*.txt", "posts", "post.tmpl"),
     ("posts/*.html", "posts", "post.tmpl"),
     ("posts/*.ipynb", "posts", "post.tmpl"),
+    ("posts/*.org", "posts", "post.tmpl"),
 )
 PAGES = (
     ("pages/*.rst", "pages", "post.tmpl"),
@@ -232,6 +233,7 @@ PAGES = (
     ("pages/*.txt", "pages", "post.tmpl"),
     ("pages/*.html", "pages", "post.tmpl"),
     ("pages/*.ipynb", "pages", "post.tmpl"),
+	("pages/*.org", "pages", "page.tmpl"),
 )
 
 
@@ -311,6 +313,7 @@ COMPILERS = {
     "wiki": ('.wiki',),
     "ipynb": ('.ipynb',),
     "html": ('.html', '.htm'),
+	"orgmode": ('.org',),
     # PHP files are rendered the usual way (i.e. with the full templates).
     # The resulting files have .php extensions, making it possible to run
     # them without reconfiguring your server to recognize them.
