@@ -23,3 +23,4 @@ plugins
 state_data.json
 requirements*.txt
 files
+pages
