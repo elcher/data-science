@@ -22,3 +22,4 @@ plugins
 .ipynb_checkpoints
 state_data.json
 requirements*.txt
+files
