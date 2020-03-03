@@ -1,4 +1,5 @@
 drafts
+man
 bin
 lib
 cache
@@ -12,11 +13,11 @@ output
 etc
 share
 include
-nikola-themes
 nikolaserve.pid
 *.py[cod]
-themes
+nikola-themes
 pip-selfcheck.json
-plugins
 .ipynb_checkpoints
 state_data.json
+requirements-*.txt
+nikola
