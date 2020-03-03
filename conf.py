@@ -233,7 +233,7 @@ PAGES = (
     ("pages/*.txt", "pages", "post.tmpl"),
     ("pages/*.html", "pages", "post.tmpl"),
     ("pages/*.ipynb", "pages", "post.tmpl"),
-	("pages/*.org", "pages", "page.tmpl"),
+    ("pages/*.org", "pages", "page.tmpl"),
 )
 
 
@@ -281,7 +281,7 @@ DATE_FANCINESS = 2
 # LOCALE_DEFAULT = locale to use for languages not mentioned in LOCALES; if
 # not set the default Nikola mapping is used.
 
-# LOCALES = {}
+LOCALES = {'en': 'en_US'}
 # LOCALE_FALLBACK = None
 # LOCALE_DEFAULT = None
 
@@ -313,7 +313,7 @@ COMPILERS = {
     "wiki": ('.wiki',),
     "ipynb": ('.ipynb',),
     "html": ('.html', '.htm'),
-	"orgmode": ('.org',),
+    "orgmode": ('.org',),
     # PHP files are rendered the usual way (i.e. with the full templates).
     # The resulting files have .php extensions, making it possible to run
     # them without reconfiguring your server to recognize them.
@@ -1316,7 +1316,7 @@ USE_BUNDLES = True
 # Add the absolute paths to directories containing themes to use them.
 # For example, the `v7` directory of your clone of the Nikola themes
 # repository.
-# EXTRA_THEMES_DIRS = []
+EXTRA_THEMES_DIRS = ['./themes/']
 
 # List of regular expressions, links matching them will always be considered
 # valid by "nikola check -l"
