@@ -21,3 +21,4 @@ pip-selfcheck.json
 state_data.json
 requirements-*.txt
 nikola
+venv
