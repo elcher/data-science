@@ -9,7 +9,6 @@ cache
 __pycache__
 *.pyc
 www
-output
 etc
 share
 include
