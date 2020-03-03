@@ -274,7 +274,7 @@ TIMEZONE = "America/Chicago"
 # 2 = using a string like “2 days ago”
 #
 # Your theme must support it, Bootstrap already does.
-# DATE_FANCINESS = 0
+DATE_FANCINESS = 2
 
 # While Nikola can select a sensible locale for each language,
 # sometimes explicit control can come handy.
@@ -1336,7 +1336,7 @@ MARKDOWN_EXTENSIONS = ['markdown.extensions.fenced_code', 'markdown.extensions.c
 # Add the absolute paths to directories containing themes to use them.
 # For example, the `v7` directory of your clone of the Nikola themes
 # repository.
-# EXTRA_THEMES_DIRS = []
+# EXTRA_THEMES_DIRS = ['themes/zen']
 
 # List of regular expressions, links matching them will always be considered
 # valid by "nikola check -l"
