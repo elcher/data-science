@@ -19,6 +19,5 @@ nikola-themes
 pip-selfcheck.json
 .ipynb_checkpoints
 state_data.json
-requirements-*.txt
 nikola
 venv
