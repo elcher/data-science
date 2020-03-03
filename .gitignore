@@ -21,6 +21,6 @@ pip-selfcheck.json
 plugins
 .ipynb_checkpoints
 state_data.json
-requirements*.txt
+requirements-*.txt
 files
 pages
