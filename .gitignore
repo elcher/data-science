@@ -13,7 +13,6 @@ output
 etc
 share
 include
-nikola-themes
 nikolaserve.pid
 *.py[cod]
 themes
