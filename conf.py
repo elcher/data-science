@@ -649,7 +649,12 @@ REDIRECTIONS = []
 #         "rsync -rav --delete output/ joe@my.site:/srv/www/site",
 #     ]
 # }
-
+DEPLOY_COMMANDS = {"default": ["git add .",
+                               "git commit -m 'Update'",
+                               "git push origin src",
+                               "git subtree split --prefix output -b gh-pages",
+                               "git push -f origin gh-pages:gh-pages",
+                               "git branch -D gh-pages"]}
 # github_deploy configuration
 # For more details, read the manual:
 # https://getnikola.com/handbook.html#deploying-to-github
