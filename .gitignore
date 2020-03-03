@@ -22,3 +22,4 @@ plugins
 state_data.json
 requirements-*.txt
 files
+nikola
