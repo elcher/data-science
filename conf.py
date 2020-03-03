@@ -25,13 +25,14 @@ SITE_URL = "https://elcher.github.io/data-science/"
 # If not set, defaults to SITE_URL
 # BASE_URL = "https://elcher.github.io/data-science/"
 BLOG_EMAIL = "elcheur@gmail.com"
-BLOG_DESCRIPTION = "demo"  # (translatable)
+BLOG_DESCRIPTION = "This is a site to publish my data science projects."  # (translatable)
 
 # Nikola is multilingual!
 #
 # Currently supported languages are:
 #
 # en        English
+# af        Afrikaans
 # ar        Arabic
 # az        Azerbaijani
 # bg        Bulgarian
@@ -48,16 +49,19 @@ BLOG_DESCRIPTION = "demo"  # (translatable)
 # fa        Persian
 # fi        Finnish
 # fr        French
+# fur       Friulian
 # gl        Galician
 # he        Hebrew
 # hi        Hindi
 # hr        Croatian
 # hu        Hungarian
+# ia        Interlingua
 # id        Indonesian
 # it        Italian
 # ja        Japanese [NOT jp]
 # ko        Korean
 # lt        Lithuanian
+# ml        Malayalam
 # nb        Norwegian (Bokmål)
 # nl        Dutch
 # pa        Punjabi
@@ -76,6 +80,7 @@ BLOG_DESCRIPTION = "demo"  # (translatable)
 # tr        Turkish [NOT tr_TR]
 # uk        Ukrainian
 # ur        Urdu
+# vi        Vietnamese
 # zh_cn     Chinese (Simplified)
 # zh_tw     Chinese (Traditional)
 #
@@ -155,7 +160,7 @@ NAVIGATION_LINKS = {
 # although themes may not always support them. (translatable)
 # (Bootstrap 4: right-side of navbar, Bootblog 4: right side of title)
 NAVIGATION_ALT_LINKS = {
-    DEFAULT_LANG: {}
+    DEFAULT_LANG: ()
 }
 
 # Name of the theme to use.
@@ -170,7 +175,7 @@ THEME = "zen"
 THEME_CONFIG = {
     DEFAULT_LANG: {
         # Show the latest featured post in a large box, with the previewimage as its background.
-        'featured_large': False,
+        'featured_large': True,
         # Show the first (remaining) two featured posts in small boxes.
         'featured_small': False,
         # Show featured posts on mobile.
@@ -254,11 +259,12 @@ TIMEZONE = "America/Chicago"
 # FORCE_ISO8601 = False
 
 # Date format used to display post dates. (translatable)
-# (str used by datetime.datetime.strftime)
-# DATE_FORMAT = '%Y-%m-%d %H:%M'
+# Used by babel.dates, CLDR style: http://cldr.unicode.org/translation/date-time
+# You can also use 'full', 'long', 'medium', or 'short'
+# DATE_FORMAT = 'yyyy-MM-dd HH:mm'
 
 # Date format used to display post dates, if local dates are used. (translatable)
-# (str used by moment.js)
+# Used by moment.js: https://momentjs.com/docs/#/displaying/format/
 # JS_DATE_FORMAT = 'YYYY-MM-DD HH:mm'
 
 # Date fanciness.
@@ -268,7 +274,7 @@ TIMEZONE = "America/Chicago"
 # 2 = using a string like “2 days ago”
 #
 # Your theme must support it, Bootstrap already does.
-DATE_FANCINESS = 2
+# DATE_FANCINESS = 0
 
 # While Nikola can select a sensible locale for each language,
 # sometimes explicit control can come handy.
@@ -301,6 +307,8 @@ LOCALES = {'en': 'en_US'}
 # Feel free to add or delete extensions to any list, but don't add any new
 # compilers unless you write the interface for it yourself.
 #
+# The default compiler for `new_post` is the first entry in the POSTS tuple.
+#
 # 'rest' is reStructuredText
 # 'markdown' is Markdown
 # 'html' assumes the file is HTML and just copies it
@@ -324,6 +332,11 @@ COMPILERS = {
     # "pandoc": ('.rst', '.md', '.txt'),
 }
 
+# Enable reST directives that insert the contents of external files such
+# as "include" and "raw." This maps directly to the docutils file_insertion_enabled
+# config. See: http://docutils.sourceforge.net/docs/user/config.html#file-insertion-enabled
+# REST_FILE_INSERTION_ENABLED = True
+
 # Create by default posts in one file format?
 # Set to False for two-file posts, with separate metadata.
 # ONE_FILE_POSTS = True
@@ -333,7 +346,7 @@ COMPILERS = {
 # "YAML": YAML wrapped in "---"
 # "TOML": TOML wrapped in "+++"
 # "Pelican": Native markdown metadata or reST docinfo fields. Nikola style for other formats.
-# METADATA_FORMAT = "Nikola"
+METADATA_FORMAT = "YAML"
 
 # Use date-based path when creating posts?
 # Can be enabled on a per-post basis with `nikola new_post -d`.
@@ -555,7 +568,7 @@ HIDDEN_AUTHORS = ['Guest']
 # Final location for the main blog page and sibling paginated pages is
 # output / TRANSLATION[lang] / INDEX_PATH / index-*.html
 # (translatable)
-INDEX_PATH = ""
+# INDEX_PATH = ""
 
 # Optional HTML that displayed on “main” blog index.html files.
 # May be used for a greeting. (translatable)
@@ -579,6 +592,7 @@ FRONT_INDEX_HEADER = {
 # output / TRANSLATION[lang] / ARCHIVE_PATH / YEAR / index.html
 # output / TRANSLATION[lang] / ARCHIVE_PATH / YEAR / MONTH / index.html
 # output / TRANSLATION[lang] / ARCHIVE_PATH / YEAR / MONTH / DAY / index.html
+# (translatable)
 # ARCHIVE_PATH = ""
 # ARCHIVE_FILENAME = "archive.html"
 
@@ -890,7 +904,7 @@ IMAGE_FOLDERS = {'images': 'images'}
 # META_GENERATOR_TAG = True
 
 # Color scheme to be used for code blocks. If your theme provides
-# "assets/css/code.css" this is ignored. Leave empty to disable.
+# "assets/css/code.css" this is ignored. Set to None to disable.
 # Can be any of:
 # algol, algol_nu, autumn, borland, bw, colorful, default, emacs, friendly,
 # fruity, igor, lovelace, manni, monokai, murphy, native, paraiso-dark,
@@ -988,12 +1002,12 @@ RSS_COPYRIGHT_FORMATS = CONTENT_FOOTER_FORMATS
 # systems.  The following comment systems are supported by Nikola:
 #   disqus, facebook, intensedebate, isso, livefyre, muut
 # You can leave this option blank to disable comments.
-COMMENT_SYSTEM = ""
+COMMENT_SYSTEM = "disqus"
 # And you also need to add your COMMENT_SYSTEM_ID which
 # depends on what comment system you use. The default is
 # "nikolademo" which is a test account for Disqus. More information
 # is in the manual.
-COMMENT_SYSTEM_ID = ""
+COMMENT_SYSTEM_ID = "nikolademo"
 
 # Create index.html for page folders?
 # WARNING: if a page would conflict with the index file (usually
@@ -1071,7 +1085,7 @@ MathJax.Hub.Config({
 # feature yet, it's faster and the output looks better.
 # USE_KATEX = False
 
-# KaTeX auto-render settings. If you want support for the $.$ syntax (wihch may
+# KaTeX auto-render settings. If you want support for the $.$ syntax (which may
 # conflict with running text!), just use this config:
 # KATEX_AUTO_RENDER = """
 # delimiters: [
@@ -1094,7 +1108,8 @@ IPYNB_CONFIG = {'Exporter':{'template_file': 'toggle.tpl'}}
 # done in the code, hope you don't mind ;-)
 # Note: most Nikola-specific extensions are done via the Nikola plugin system,
 #       with the MarkdownExtension class and should not be added here.
-# The default is ['fenced_code', 'codehilite']
+# Defaults are markdown.extensions.(fenced_code|codehilite|extra)
+# markdown.extensions.meta is required for Markdown metadata.
 MARKDOWN_EXTENSIONS = ['markdown.extensions.fenced_code', 'markdown.extensions.codehilite', 'markdown.extensions.extra']
 
 # Options to be passed to markdown extensions (See https://python-markdown.github.io/reference/)
@@ -1299,10 +1314,10 @@ MARKDOWN_EXTENSIONS = ['markdown.extensions.fenced_code', 'markdown.extensions.c
 #     # 'creator': '@username',     # Username for the content creator / author.
 # }
 
-# If webassets is installed, bundle JS and CSS into single files to make
-# site loading faster in a HTTP/1.1 environment but is not recommended for
-# HTTP/2.0 when caching is used. Defaults to True.
-USE_BUNDLES = True
+# Bundle JS and CSS into single files to make site loading faster in a HTTP/1.1
+# environment but is not recommended for HTTP/2.0 when caching is used.
+# Defaults to True.
+# USE_BUNDLES = True
 
 # Plugins you don't want to use. Be careful :-)
 # DISABLED_PLUGINS = ["render_galleries"]
@@ -1321,7 +1336,7 @@ USE_BUNDLES = True
 # Add the absolute paths to directories containing themes to use them.
 # For example, the `v7` directory of your clone of the Nikola themes
 # repository.
-EXTRA_THEMES_DIRS = ['./themes/']
+# EXTRA_THEMES_DIRS = []
 
 # List of regular expressions, links matching them will always be considered
 # valid by "nikola check -l"
