@@ -1316,7 +1316,7 @@ USE_BUNDLES = True
 # Add the absolute paths to directories containing themes to use them.
 # For example, the `v7` directory of your clone of the Nikola themes
 # repository.
-# EXTRA_THEMES_DIRS = []
+EXTRA_THEMES_DIRS = ['./themes/']
 
 # List of regular expressions, links matching them will always be considered
 # valid by "nikola check -l"
