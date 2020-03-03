@@ -15,7 +15,7 @@ share
 include
 nikolaserve.pid
 *.py[cod]
-themes
+nikola-themes
 pip-selfcheck.json
 plugins
 .ipynb_checkpoints
